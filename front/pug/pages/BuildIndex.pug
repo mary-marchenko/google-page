@@ -33,6 +33,9 @@ section.box-google
                     svg(focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24")
                         path(d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z")
             .header-search__account
+                svg.burger(style="width:24px;height:24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M0 0h24v24H0z" style="fill:none")
+                    path(d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" style="fill:#5e5e5e")
                 svg.gb_E(viewBox="0 0 24 24" focusable="false")
                     path(d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z")
                     image(src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24" style="border:none;display:none \9")
@@ -242,8 +245,21 @@ section.box-google
                 .also-google__more
                     img(src='img/google-bottom.png' alt='Google')
 
+
+        section.more-google
+            div.more-google__wrapper
+                | Більше результатів пошуку
+                svg(focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24")
+                    path(d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z")
+
     footer.footer-google
         .container-google
             .footer-google__wrapper
                 .footer-google__country Україна
                 .footer-google__city-info Київ #[span - На основі ваших попередніх дій - Оновити місцезнаходження]
+            .footer-google__wrapper-mob
+                .footer-google-mob__country Україна
+                .footer-google-mob__city-info
+                    | #[span Київ] - На основі ваших попередніх дій
+                .footer-google-mob__city-info
+                    | Оновити місцезнаходження
